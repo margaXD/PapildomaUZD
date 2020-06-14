@@ -2,8 +2,6 @@
 
 int main()
 {
-    try
-    {
         mapas Tekstas = streamas();
         mapas::iterator it = Tekstas.begin();
         if(it->first.size() == 0)
@@ -63,10 +61,5 @@ int main()
         {
             std::cout<<url<<std::endl;
         }
-    }
-    }
-    catch(const std::runtime_error& e)
-    {
-        std::cout<<e.what()<<std::endl;
     }
 }
